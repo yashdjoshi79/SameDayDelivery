@@ -1,0 +1,31 @@
+body {
+	/* Background color set as workaround for Legacy Android issue:
+	https://github.com/AppGyver/steroids/issues/381 */
+	background-color:#FFFFFF;
+}
+* {
+  -webkit-user-select: none;  /* Disable selection/copy of elements when tapping for a long time */
+  -webkit-touch-callout: none; /* Disable touch callouts */
+}
+
+input {
+  -webkit-user-select: text;  /* Allow selection for input elements */
+}
+
+.content-padded {
+  padding: 10px;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
+h2.textOnProfile{
+  color:white;
+}
+#back{
+  text-align: right;
+}
+.profile{
+	left-side: 2px;
+	padding-top: 2px;
+}
