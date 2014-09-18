@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
 var threeLines = new steroids.buttons.NavigationBarButton();
 threeLines.imagePath = "/icons/lines.png";
 threeLines.onTap = function(){
-window.open("/left.html");
 steroids.view.navigationBar.hide();
+window.open("/left.html");
 };
 
 var deliveryMode = new steroids.buttons.NavigationBarButton();

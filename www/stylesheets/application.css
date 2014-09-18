@@ -1,4 +1,4 @@
-body {
+.mainBody {
 	/* Background color set as workaround for Legacy Android issue:
 	https://github.com/AppGyver/steroids/issues/381 */
 	background-color:#FFFFFF;
@@ -12,8 +12,10 @@ input {
   -webkit-user-select: text;  /* Allow selection for input elements */
 }
 
-.content-padded {
-  padding: 10px;
+.padding{
+  padding-left: 15px;
+  padding-right: auto;
+  padding-top: 30px;
 }
 html, body {
   padding: 0;
@@ -22,10 +24,10 @@ html, body {
 h2.textOnProfile{
   color:white;
 }
-#back{
-  text-align: right;
-}
+#hello{width: 90px;
+    height: 90px;}
 .profile{
-	left-side: 2px;
-	padding-top: 2px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
 }
