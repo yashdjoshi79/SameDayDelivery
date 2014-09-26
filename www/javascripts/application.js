@@ -5,18 +5,14 @@ steroids.view.navigationBar.show("Same Day Delivery");
 // Set the WebView background color to white (effective on iOS only)
 steroids.view.setBackgroundColor("#003153");
 
-var loginText = null;
-
-document.addEventListener("DOMContentLoaded", function() {
-  loginText = document.querySelector("#login-text");
-});
-
 // three Lines Button
 var threeLines = new steroids.buttons.NavigationBarButton();
 threeLines.imagePath = "/icons/lines.png";
 threeLines.onTap = function(){
-steroids.view.navigationBar.hide();
+var slowAndLinearCurlDown = new steroids.Animation({  transition: "slideFromLeft",  duration: 0.5,  curve: "linear"});
 window.open("/left.html");
+steroids.view.navigationBar.hide();
+slowAndLinearCurlDown.perform();
 };
 
 var deliveryMode = new steroids.buttons.NavigationBarButton();
@@ -60,3 +56,12 @@ function showDrawer(edge) {
         edge: edge
     })
 }*/
+
+function mainMenuClick(elem){
+// Create a view
+var myView = new steroids.views.WebView(elem.id+".html");
+myView.preload(); // Prelaod for faster view transitions
+
+// Navigate to your view
+steroids.layers.push(myView);
+}

@@ -62,8 +62,8 @@ steroids.config.preloads = [
 #   location: "http://localhost/initialView.html"
 
 # ## Navigation Bar
-steroids.config.navigationBar.tintColor = "#003153"
-steroids.config.navigationBar.titleColor = "#ffffff"
+steroids.config.navigationBar.tintColor = "#2980B9"
+steroids.config.navigationBar.titleColor = "#ECF0F1"
 steroids.config.navigationBar.buttonTintColor = "#ffffff"
 
 steroids.config.navigationBar.borderColor = "#29a347"
