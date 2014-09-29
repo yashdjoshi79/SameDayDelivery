@@ -9,10 +9,8 @@ steroids.view.setBackgroundColor("#003153");
 var threeLines = new steroids.buttons.NavigationBarButton();
 threeLines.imagePath = "/icons/lines.png";
 threeLines.onTap = function(){
-var slowAndLinearCurlDown = new steroids.Animation({  transition: "slideFromLeft",  duration: 0.5,  curve: "linear"});
-window.open("/left.html");
-steroids.view.navigationBar.hide();
-slowAndLinearCurlDown.perform();
+var webView = new steroids.views.WebView("left.html");
+  steroids.modal.show(webView);
 };
 
 var deliveryMode = new steroids.buttons.NavigationBarButton();

@@ -52,3 +52,7 @@ text-align:center;
   letter-spacing: normal;
   word-spacing : normal; 
 }
+.textSub{
+float:right;
+line-height: 100px;
+}
