@@ -34,6 +34,46 @@ steroids.config.preloads = [
     id: "leftDrawer"
     location: "http://localhost/left.html"
   }
+  {
+    id: "clothes"
+    location: "http://localhost/Clothes.html"
+  }
+  {
+    id: "alcohol"
+    location: "http://localhost/Alcohol.html"
+  }
+  {
+    id: "toiletries"
+    location: "http://localhost/Toiletries.html"
+  }
+  {
+    id: "stationary"
+    location: "http://localhost/Stationary.html"
+  }
+  {
+    id: "gaming"
+    location: "http://localhost/Gaming.html"
+  }
+  {
+    id: "groceries"
+    location: "http://localhost/Groceries.html"
+  }
+  {
+    id: "flowers"
+    location: "http://localhost/Flowers.html"
+  }
+  {
+    id: "electronics"
+    location: "http://localhost/Electronics.html"
+  }
+  {
+    id: "sports"
+    location: "http://localhost/Sports.html"
+  }
+  {
+    id: "main"
+    location: "http://localhost/tutorial.html"
+  }
 ]
 
 # ## Drawers
@@ -62,12 +102,12 @@ steroids.config.preloads = [
 #   location: "http://localhost/initialView.html"
 
 # ## Navigation Bar
-steroids.config.navigationBar.tintColor = "#2980B9"
-steroids.config.navigationBar.titleColor = "#ECF0F1"
+steroids.config.navigationBar.tintColor = "#3498db"
+steroids.config.navigationBar.titleColor = "#ecf0f1"
 steroids.config.navigationBar.buttonTintColor = "#ffffff"
 
-steroids.config.navigationBar.borderColor = "#29a347"
-steroids.config.navigationBar.borderSize = 2
+#steroids.config.navigationBar.borderColor = "#29a347"
+#steroids.config.navigationBar.borderSize = 2
 
 # steroids.config.navigationBar.landscape.backgroundImage = ""
 # steroids.config.navigationBar.portrait.backgroundImage = ""

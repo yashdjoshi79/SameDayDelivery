@@ -5,20 +5,26 @@
   <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.1/css/ionic.css">
   <script src="http://localhost/cordova.js"></script>
   <script src="/components/steroids-js/steroids.js"></script>
+<script src="/javascripts/subCategory.js"></script>
 </head>
-<body>
-<div class="test">
-<ul>
-        <li class="item" onClick="window.open('/tutorial.html')">Racquet Ball</li>
-        <li class="item" onClick="window.open('/tutorial.html')">Basketball</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Football</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Squash</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Soccer</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Cricket</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Swimming</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Ultimate Frisbee</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Weight Training</li>
-
-    </ul>
+<body class="mainBody">
+<div class="halfscreen">
+	<div class="scrollingLeft">
+		<div class="list">
+			<a id="rb" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/rb.png"/><h6>Racquet</h6><h6>Ball</h4></a>
+			<a id="basketball" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/basketball.png"/><h5>Basketball</h5></a>
+			<a id="football" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/football.png"/><h4>Football</h4></a>
+			<a id="squash" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/squash.png"/><h4>Squash</h4></a>
+			<a id="cricket" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/cricket.png"/><h4>Cricket</h4></a>
+			<a id="swimming" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/swimming.png"/><h5>swimming</h5></a>
+			<a id="uf" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/uf.png"/><h6>Ultimate</h6><h6>Frisbee</h6></a>
+			<a id="wt" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/wt.png"/><h6>Workout</h6></a>
+		</div>
+	</div>
+	<!--<div class="scrollingRight">
+		<div id="itemsOnPage" class="list">
+		</div>
+	</div>-->
+</div>
 	</body>
 </html>

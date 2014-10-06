@@ -5,17 +5,25 @@
   <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.1/css/ionic.css">
   <script src="http://localhost/cordova.js"></script>
   <script src="/components/steroids-js/steroids.js"></script>
+<script src="/javascripts/subCategory.js"></script>
 </head>
-<body>
-<ul class="list">
-        <li class="item" onClick="window.open('/tutorial.html')">Shampoo</li>
-        <li class="item" onClick="window.open('/tutorial.html')">Soap</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Body Wash</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Toilet Paper</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Bathroom Tissues</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Face Wash</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Nail Cutter</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Cleaners</li>
-    </ul>
+<body class="mainBody">
+<div class="halfscreen">
+	<div class="scrollingLeft">
+		<div class="list">
+			<a id="shampoo" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/shampoo.png"/><h5>Shampoo</h5></a>
+			<a id="soap" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/soap.png"/><h4>Soap</h4></a>
+			<a id="wash" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/wash.png"/><h4>Body</h4><h4>Wash</h4></a>
+			<a id="papers" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/papers.png"/><h4>Toilet</h4><h4> Paper</h4></a>
+			<a id="tissues" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/tissues.png"/><h4>Tissues</h4></a>
+			<a id="wash" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/fwash.png"/><h4>Face</h4><h4> Wash</h4></a>
+			<a id="cleaners" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/cleaners.png"/><h4>Cleaners</h4></a>
+		</div>
+	</div>
+	<!--<div class="scrollingRight">
+		<div id="itemsOnPage" class="list">
+		</div>
+	</div>-->
+</div>
 	</body>
 </html>

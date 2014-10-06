@@ -1,7 +1,7 @@
 .mainBody {
 	/* Background color set as workaround for Legacy Android issue:
 	https://github.com/AppGyver/steroids/issues/381 */
-	background-color:#FFFFFF;
+	background: -webkit-linear-gradient(#ecf0f1,#bdc3c7, #ecf0f1);
 }
 * {
   -webkit-user-select: none;  /* Disable selection/copy of elements when tapping for a long time */
@@ -11,30 +11,25 @@
 input {
   -webkit-user-select: text;  /* Allow selection for input elements */
 }
-
-.padding{
-  white-space: normal; 
-  display: inline-block;
-  margin: 0 auto; 
-  padding: 0; 
-  letter-spacing: normal;
-  word-spacing : normal; 
+.mainBody .row{
+padding-left: 0px;
+padding-top:1%;
+padding-right:0px;
 }
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
+.mainBody .row .col{
+text-align:center;
 }
 h2.textOnProfile{
   color:white;
 }
-.hello{width: 90px;
-    height: 90px;}
+.hello{width: 95px;
+    height: 95px;
+	}
+	
 .profile{
-	padding-left: 15px;
-	padding-top: 30px;
-	padding-right: 15px;
+	padding-left: 10%;
+	padding-top: 4%;
+	padding-right:3%
 }
 .test{
 	overflow-y: auto;
@@ -42,17 +37,34 @@ h2.textOnProfile{
 	position: static;
     height: 100%;	}
 #caption{
-text-align:center;
+	text-align:center;
+	font-family: 'quicksand', sans-serif;
+	font-weight: bold;
 }
-.picturesOfMainMenu{
-  white-space: normal; 
-  display: inline-block;
-  margin: 0; 
-  padding: 5px; 
-  letter-spacing: normal;
-  word-spacing : normal; 
+
+.halfscreen{
+    height: 100%;
+	margin: 0 auto;
 }
-.textSub{
-float:right;
-line-height: 100px;
+.halfscreen .scrollingLeft{
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	position: static;
+	width:50%;
+    float: left;
+	height:100%;
+}
+
+.halfscreen .list{
+    border: .5px solid #a1a1a1;
+  }
+.halfscreen .scrollingRight{
+    float: left;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	position: static;
+    height: 100%;
+	width:50%;
 }

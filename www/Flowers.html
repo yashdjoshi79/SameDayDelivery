@@ -5,14 +5,20 @@
   <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.1/css/ionic.css">
   <script src="http://localhost/cordova.js"></script>
   <script src="/components/steroids-js/steroids.js"></script>
+  <script src="/javascripts/subCategory.js"></script>
 </head>
-<body>
-<ul class="list">
-        <li class="item" onClick="window.open('/tutorial.html')">Rose</li>
-        <li class="item" onClick="window.open('/tutorial.html')">Lily</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Lavender</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Sunflower</li>
-
-    </ul>
+<body class="mainBody">
+<div class="halfscreen">
+	<div class="scrollingLeft">
+		<div class="list">
+			<a id="bouquet" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/bouquet.png"/><h4>Bouquet</h4></a>
+			<a id="cards" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/cards.png"/><h4>Greet</h4><h4> Cards</h4></a>
+			<a id="plants" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/plants.png"/><h4>Plants</h4></a>
+		</div>
+	</div>
+	<!--<div class="scrollingRight">
+		<div id="itemsOnPage" class="list">
+		</div>
+	</div>--></div>
 	</body>
 </html>

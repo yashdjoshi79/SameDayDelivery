@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
-  <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.1/css/ionic.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.13/css/ionic.css" />
   <script src="http://localhost/cordova.js"></script>
   <script src="/components/steroids-js/steroids.js"></script>
   <script src="/javascripts/left.js"></script>
@@ -11,13 +11,12 @@
 	<img onClick="cross()" src="/icons/back.png" height="20" width="20">
     <h2 class="textOnProfile">Profile</h2>
 	
-    <ul class="list">
-        <li class="item" onClick="window.open('/tutorial.html')">Cart</li>
-        <li class="item" onClick="window.open('/tutorial.html')">Payments</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Cards</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Settings</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Delivery Man Location</li>
-
-    </ul>
+    <div class="list card">
+        <a onClick="window.open("tutorial.html")" class="item item-icon-left"><i class="ion-ios7-cart"></i> Cart</a>
+        <a onClick="window.open("tutorial.html") href='#' class="item item-icon-left"><i class="ion-cash"></i> Payments</a>
+		<a onClick="window.open("tutorial.html") href='#' class="item item-icon-left"><i class="ion-card"></i> Reward Cards</a>
+		<a onClick="window.open("tutorial.html") href='#' class="item item-icon-left"><i class="ion-ios7-cog"></i> Account Settings</a>
+		<a onClick="window.open("tutorial.html") href='#' class="item item-icon-left"><i class="ion-model-s"></i> Delivery Man Location</a>
+    </div>
 </body>
 </html>

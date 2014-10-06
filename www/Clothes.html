@@ -5,15 +5,27 @@
   <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.1/css/ionic.css">
   <script src="http://localhost/cordova.js"></script>
   <script src="/components/steroids-js/steroids.js"></script>
+  <script src="/javascripts/subCategory.js"></script>
 </head>
-<body>
-<ul class="list">
-        <li class="item" onClick="window.open('/tutorial.html')"><img width="64px" height="64px" src="/icons/clothing/tees.png"/><span class="textSub">CoffeeTees</span></li>
-        <li class="item" onClick="window.open('/tutorial.html')"><img src="/icons/clothing/shorts.png"class="subCategoryIcon"/><span class="textSub">Shorts</span></li>
-		<li class="item" onClick="window.open('/tutorial.html')"><img src="/icons/clothing/shirts.png"class="subCategoryIcon"/><span class="textSub">Shirts</span></li>
-		<li class="item" onClick="window.open('/tutorial.html')"><img src="/icons/clothing/pants.png"class="subCategoryIcon"/><span class="textSub">Pants</span></li>
-		<li class="item" onClick="window.open('/tutorial.html')"><img src="/icons/clothing/shoes.png"class="subCategoryIcon"/><span class="textSub">Shoes</span></li>
-
-    </ul>
+<body class="mainBody">
+<div class="halfscreen">
+	<div class="scrollingLeft">
+		<div class="list">
+			<a id="tees" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/tees.png"/><h4>Tees</h4></a>
+			<a id="shorts" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/shorts.png"/><h4>Shorts</h4></a>
+			<a id="shirts" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/shirts.png"/><h4>Shirts</h4></a>
+			<a id="pants" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/pants.png"/><h4>Pants</h4></a>
+			<a id="shoes" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/shoes.png"/><h4>Shoes</h4></a>
+			<a id="socks" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/socks.png"/><h4>Socks</h4></a>
+			<a id="hats" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/hats.png"/><h4>Hats</h4></a>
+			<a id="suits" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/suits.png"/><h4>Suits</h4></a>
+			<a id="ties" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/ties.png"/><h4>Ties</h4></a>
+		</div>
+	</div>
+	<!--<div class="scrollingRight">
+		<div id="itemsOnPage" class="list">
+		</div>
+	</div>-->
+</div>
 	</body>
 </html>

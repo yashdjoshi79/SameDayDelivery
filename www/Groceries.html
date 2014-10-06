@@ -4,19 +4,26 @@
   <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
   <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.1/css/ionic.css">
   <script src="http://localhost/cordova.js"></script>
-  <script src="/components/steroids-js/steroids.js"></script>
+  <script src="/compveggiesnts/steroids-js/steroids.js"></script>
+  <script src="/javascripts/subCategory.js"></script>
 </head>
-<body>
-<ul class="list">
-        <li class="item" onClick="window.open('/tutorial.html')">Veggies</li>
-        <li class="item" onClick="window.open('/tutorial.html')">Breads</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Eggs</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Meats</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Juices</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Cereals</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Yoghurt</li>
-		<li class="item" onClick="window.open('/tutorial.html')">Fruits</li>
-
-    </ul>
+<body class="mainBody">
+<div class="halfscreen">
+	<div class="scrollingLeft">
+		<div class="list">
+			<a id="veggies" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/veggies.png"/><h4>Veggies</h4></a>
+			<a id="breads" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/breads.png"/><h4>Breads</h4></a>
+			<a id="eggs" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/eggs.png"/><h4>Eggs</h4></a>
+			<a id="cereals" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/cereals.png"/><h4>Cereals</h4></a>
+			<a id="fruits" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/fruits.png"/><h4>Fruits</h4></a>
+			<a id="juices" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/juices.png"/><h4>Juices</h4></a>
+			<a id="meats" class="item item-avatar" onclick="subcategoryList(this)" href='#'><img src="/icons/sub/meats.png"/><h4>Meats</h4></a>
+		</div>
+	</div>
+	<!--<div class="scrollingRight">
+		<div id="itemsOnPage" class="list">
+		</div>
+	</div>-->
+</div>
 	</body>
 </html>
