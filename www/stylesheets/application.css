@@ -11,20 +11,13 @@
 input {
   -webkit-user-select: text;  /* Allow selection for input elements */
 }
-.mainBody .row{
-padding-left: 0px;
-padding-top:1%;
-padding-right:0px;
-}
+
 .mainBody .row .col{
 text-align:center;
 }
 h2.textOnProfile{
   color:white;
 }
-.hello{width: 95px;
-    height: 95px;
-	}
 	
 .profile{
 	padding-left: 10%;
@@ -68,3 +61,36 @@ h2.textOnProfile{
     height: 100%;
 	width:50%;
 }
+/*Iphone 6+*/
+@media only screen and (min-device-width: 400px) and (max-device-width: 415px) {
+.hello{width: 125px;
+    height: 125px;
+	}
+.mainBody .row{
+padding-left: 0px;
+padding-top: 10%;
+padding-right:0px;
+}
+ }
+ /*Iphone 6- moto G*/
+@media only screen and (min-device-width: 330px) and (max-device-width: 400px) {
+.hello{width: 110px;
+    height: 110px;
+	}
+.mainBody .row{
+padding-left: 0px;
+padding-top:7%;
+padding-right:0px;
+}
+}
+/*Iphone 5s,5,4s*/
+@media only screen and (min-device-width: 319px) and (max-device-width: 321px) {
+.mainBody .row{
+padding-left: 0px;
+padding-top:2.5%;
+padding-right:0px;
+}
+.hello{width: 94px;
+    height: 94px;
+	}
+ }

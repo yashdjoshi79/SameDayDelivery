@@ -70,10 +70,6 @@ steroids.config.preloads = [
     id: "sports"
     location: "http://localhost/Sports.html"
   }
-  {
-    id: "main"
-    location: "http://localhost/tutorial.html"
-  }
 ]
 
 # ## Drawers
@@ -102,7 +98,7 @@ steroids.config.preloads = [
 #   location: "http://localhost/initialView.html"
 
 # ## Navigation Bar
-steroids.config.navigationBar.tintColor = "#3498db"
+steroids.config.navigationBar.tintColor = "#3498DB"
 steroids.config.navigationBar.titleColor = "#ecf0f1"
 steroids.config.navigationBar.buttonTintColor = "#ffffff"
 

@@ -1,14 +1,24 @@
 //...........NavBar.................
+window.addEventListener('load', function() {
+    FastClick.attach(document.body);
+}, false);
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    }
+};
+if( isMobile.Android()){
+steroids.view.navigationBar.show("Same Day Delivery");
+}else{
 // Display the native navigation bar with the title "Hello World!"
 steroids.view.navigationBar.show("Same Day Delivery");
-
-// Set the WebView background color to white (effective on iOS only)
-steroids.view.setBackgroundColor("#ecf0f1");
-
 // three Lines Button
 var threeLines = new steroids.buttons.NavigationBarButton();
 threeLines.imagePath = "/icons/lines.png";
-  var anim = new steroids.Animation("slideFromRight");
+var anim = new steroids.Animation("slideFromRight");
 var left = new steroids.views.WebView({location: "left.html", id: "leftDrawer"})
 threeLines.onTap = function(){
   steroids.modal.show(left);
@@ -31,41 +41,12 @@ steroids.view.navigationBar.update({
     right: [deliveryMode],
 	left: [threeLines]
   }
-})
-//............Profile.........
-
-//............Drawers..........
-/*var leftDrawerView = new steroids.views.WebView({location:"/left.html", id:"leftDrawer"})
-var indexView = new steroids.views.WebView({location:"/tutorial.html", id:"http://localhost/tutorial.html"}) 
-
-window.ViewController = {
-    leftDrawer: leftDrawerView,
-    index: indexView,
+});
 }
-leftDrawerView.widthOfDrawerInPixels = 200;
+// Set the WebView background color to white (effective on iOS only)
+steroids.view.setBackgroundColor("#ecf0f1");
 
-function updateDrawers() {
-	steroids.drawers.update({
-		left: ViewController.leftDrawer,
-		options: {
-			showShadow: true,
-			stretchDrawer: true,
-			animation: steroids.drawers.defaultAnimations.SWINGING_DOOR,
-    }
-	});
-}
 
-function closeDrawerAndShowView(view) {
-    steroids.drawers.hide({
-        center: ViewController[view]
-    });
-}
-
-function showDrawer(edge) {
-    steroids.drawers.show({
-        edge: edge
-    })
-}*/
 //preloading Sub Menus
 var clothes = new steroids.views.WebView({location: "Clothes.html", id: "clothes"});
 var Alcohol = new steroids.views.WebView({location: "Alcohol.html", id: "alcohol"});
@@ -98,3 +79,4 @@ steroids.layers.push(Sports);
 steroids.layers.push(Alcohol);
 }
 }
+
