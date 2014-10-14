@@ -1,6 +1,7 @@
 .mainBody {
 	/* Background color set as workaround for Legacy Android issue:
 	https://github.com/AppGyver/steroids/issues/381 */
+	background-color: -webkit-linear-gradient(#ecf0f1,#bdc3c7, #ecf0f1);
 	background: -webkit-linear-gradient(#ecf0f1,#bdc3c7, #ecf0f1);
 }
 * {
@@ -22,13 +23,10 @@ h2.textOnProfile{
 .profile{
 	padding-left: 10%;
 	padding-top: 4%;
-	padding-right:3%
+	padding-right:3%;
+	background-color:#003153;
+	background:#003153;
 }
-.test{
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
-	position: static;
-    height: 100%;	}
 #caption{
 	text-align:center;
 	font-family: 'quicksand', sans-serif;
@@ -74,12 +72,12 @@ padding-right:0px;
  }
  /*Iphone 6- moto G*/
 @media only screen and (min-device-width: 330px) and (max-device-width: 400px) {
-.hello{width: 110px;
-    height: 110px;
+.hello{width: 103px;
+    height: 103px;
 	}
 .mainBody .row{
 padding-left: 0px;
-padding-top:7%;
+padding-top:5%;
 padding-right:0px;
 }
 }
@@ -95,5 +93,23 @@ padding-right:0px;
 	}
  }
  .active{
- background:bdc3c7;
+	background:bdc3c7;
  }
+.active h{
+	visibility:none;
+}
+.content {
+	background:#ecf0f1;
+	padding-top:10%;
+}
+.loginheading {
+	text-align:center;
+	color:#2980b9;
+	font-weight:bold;
+	}
+.loginheading h1{
+	padding-top:45 px;
+}
+#log .list{
+width:100%;
+}

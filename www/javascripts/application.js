@@ -1,7 +1,11 @@
 //...........NavBar.................
-window.addEventListener('load', function() {
-    FastClick.attach(document.body);
-}, false);
+var left = new steroids.views.WebView({
+    location: "left.html",
+    id: "leftDrawer"
+});
+
+var driver = new steroids.views.WebView("Driver.html");
+
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -11,20 +15,17 @@ var isMobile = {
     }
 };
 if (isMobile.Android()) {
-    steroids.view.navigationBar.show("Same Day Delivery");
+    steroids.view.navigationBar.show("PACKMAN");
+    document.write('<div class="button-bar"><a onclick="steroids.modal.show(left)" class="button button-positive"><i class="ion-person"></i>Profile</a><a onclick="steroids.modal.show(left)" class="button button-positive"><i class="ion-person"></i>Profile</a><a onclick="steroids.layers.push({view: driver})" class="button button-positive"><i class="ion-model-s"></i> Delivery</a></div>');
 } else {
     // Display the native navigation bar with the title "Hello World!"
-    steroids.view.navigationBar.show("Same Day Delivery");
+    steroids.view.navigationBar.show("PACKMAN");
     // three Lines Button
     var threeLines = new steroids.buttons.NavigationBarButton();
     threeLines.imagePath = "/icons/lines.png";
     var anim = new steroids.Animation("slideFromRight");
     //var animone = new steroids.Animation("curlUp");
-
-    var left = new steroids.views.WebView({
-        location: "left.html",
-        id: "leftDrawer"
-    })
+    steroids.view.removeLoading();
     threeLines.onTap = function() {
         steroids.modal.show(left);
     };
@@ -32,7 +33,6 @@ if (isMobile.Android()) {
     // Car button
     var deliveryMode = new steroids.buttons.NavigationBarButton();
     deliveryMode.imagePath = "/icons/car63.png";
-    var driver = new steroids.views.WebView("Driver.html");
     deliveryMode.onTap = function() {
         steroids.layers.push({
             view: driver,
@@ -48,9 +48,6 @@ if (isMobile.Android()) {
         }
     });
 }
-// Set the WebView background color to white (effective on iOS only)
-steroids.view.setBackgroundColor("#ecf0f1");
-
 
 //preloading Sub Menus
 var clothes = new steroids.views.WebView({

@@ -1,21 +1,30 @@
-function clockIn(){
-var onSuccess = function(position) {
-    alert('Latitude: '          + position.coords.latitude          + '\n' +
-          'Longitude: '         + position.coords.longitude         + '\n' +
-          'Altitude: '          + position.coords.altitude          + '\n' +
-          'Accuracy: '          + position.coords.accuracy          + '\n' +
-          'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-          'Heading: '           + position.coords.heading           + '\n' +
-          'Speed: '             + position.coords.speed             + '\n' +
-          'Timestamp: '         + position.timestamp                + '\n');
-	};
-
-	// onError Callback receives a PositionError object
-	//
-	function onError(error) {
-    alert('code: '    + error.code    + '\n' +
-          'message: ' + error.message + '\n');
-	}
-
-	navigator.geolocation.getCurrentPosition(onSuccess, onError);*/
-	}
+document.addEventListener("deviceready", onDeviceReady, false);
+        
+    function onDeviceReady() {
+            navigator.geolocation.getCurrentPosition(onSuccess, onError); //call to get user's current position
+        }
+        
+    var onSuccess = function(position) {
+            var myLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); //instantiate a new Google Map location with the parameters being the Crodva position coordinates
+            map = new google.maps.Map(document.getElementById('map_canvas'), {
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+				center: myLocation,
+                zoom: 12,
+				disableDefaultUI:true 
+            });
+ 
+            var viewport_height = $(window).height() - 232;
+            var viewport_width = $(window).width();
+ 
+            $("#map_canvas").css("height", viewport_height);
+            $("#map_canvas").css("width", viewport_width);
+}
+    
+    function onError(error) {
+            navigator.notification.alert(
+                'Please check your wireless network or allow us to access your location in the privacy settings.', // message
+                alertDismissed, // callback
+                'Connectivity Issue', // title
+                'Ok' // buttonName
+            );
+        }

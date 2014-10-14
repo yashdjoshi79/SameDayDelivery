@@ -4,7 +4,7 @@
 steroids.config.name = "samedaydilivery"
 
 # ## Start Location
-steroids.config.location = "http://localhost/tutorial.html"
+steroids.config.location = "http://localhost/index.html"
 
 # ## Tab Bar
 # steroids.config.tabBar.enabled = true
