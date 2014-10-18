@@ -7,6 +7,7 @@
 * {
   -webkit-user-select: none;  /* Disable selection/copy of elements when tapping for a long time */
   -webkit-touch-callout: none; /* Disable touch callouts */
+  font-family: 'quicksand', sans-serif;
 }
 
 input {
@@ -24,12 +25,11 @@ h2.textOnProfile{
 	padding-left: 10%;
 	padding-top: 4%;
 	padding-right:3%;
-	background-color:#003153;
-	background:#003153;
+	background-color:#1aacc3;
+	background:#1aacc3;
 }
 #caption{
 	text-align:center;
-	font-family: 'quicksand', sans-serif;
 	font-weight: bold;
 }
 
@@ -72,8 +72,8 @@ padding-right:0px;
  }
  /*Iphone 6- moto G*/
 @media only screen and (min-device-width: 330px) and (max-device-width: 400px) {
-.hello{width: 103px;
-    height: 103px;
+.hello{width: 100px;
+    height: 100px;
 	}
 .mainBody .row{
 padding-left: 0px;
@@ -81,8 +81,26 @@ padding-top:5%;
 padding-right:0px;
 }
 }
-/*Iphone 5s,5,4s*/
-@media only screen and (min-device-width: 319px) and (max-device-width: 321px) {
+/*Iphone 5s,5*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+.mainBody .row{
+padding-left: 0px;
+padding-top:4%;
+padding-right:0px;
+}
+.hello{width: 97px;
+    height: 97px;
+	}
+
+}
+/*4s*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) { 
 .mainBody .row{
 padding-left: 0px;
 padding-top:2.5%;
@@ -95,21 +113,40 @@ padding-right:0px;
  .active{
 	background:bdc3c7;
  }
-.active h{
-	visibility:none;
+.active h4{
+	visibility:hidden;
+}
+.active h5{
+	visibility:hidden;
+}
+.active h6{
+	visibility:hidden;
 }
 .content {
 	background:#ecf0f1;
-	padding-top:10%;
+	padding-top:8%;
 }
 .loginheading {
 	text-align:center;
-	color:#2980b9;
+	font-family: 'quicksand', sans-serif;
+	color:#1aacc3;
 	font-weight:bold;
 	}
 .loginheading h1{
-	padding-top:45 px;
+	padding-top:10% px;
 }
 #log .list{
 width:100%;
+font-family: 'quicksand', sans-serif;
+}
+#index{
+overflow-y:hidden;
+}
+#cross{
+position:fixed;
+top: 3%;
+left: 5%;
+}
+.button{
+  font-family: 'quicksand', sans-serif;
 }

@@ -1,4 +1,4 @@
-steroids.view.setBackgroundColor("#003153");
+steroids.view.setBackgroundColor("#1aacc3");
 function cross(){
 steroids.modal.hide();
 };

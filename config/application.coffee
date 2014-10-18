@@ -31,6 +31,10 @@ steroids.config.location = "http://localhost/index.html"
 # ## Preloads
 steroids.config.preloads = [
   {
+    id: "sign"
+    location: "http://localhost/signup.html"
+  }
+  {
     id: "leftDrawer"
     location: "http://localhost/left.html"
   }
@@ -98,7 +102,7 @@ steroids.config.preloads = [
 #   location: "http://localhost/initialView.html"
 
 # ## Navigation Bar
-steroids.config.navigationBar.tintColor = "#3498DB"
+steroids.config.navigationBar.tintColor = "#1aacc3"
 steroids.config.navigationBar.titleColor = "#ecf0f1"
 steroids.config.navigationBar.buttonTintColor = "#ffffff"
 

@@ -3,7 +3,6 @@ var left = new steroids.views.WebView({
     location: "left.html",
     id: "leftDrawer"
 });
-
 var driver = new steroids.views.WebView("Driver.html");
 
 var isMobile = {
@@ -15,11 +14,11 @@ var isMobile = {
     }
 };
 if (isMobile.Android()) {
-    steroids.view.navigationBar.show("PACKMAN");
-    document.write('<div class="button-bar"><a onclick="steroids.modal.show(left)" class="button button-positive"><i class="ion-person"></i>Profile</a><a onclick="steroids.modal.show(left)" class="button button-positive"><i class="ion-person"></i>Profile</a><a onclick="steroids.layers.push({view: driver})" class="button button-positive"><i class="ion-model-s"></i> Delivery</a></div>');
+    steroids.view.navigationBar.show("CartDrop");
+    document.write('<div class="button-bar"><a onclick="steroids.modal.show(left)" class="button button-calm"><i class="ion-person"></i>Profile</a><a onclick="steroids.modal.show(left)" class="button button-calm"><i class="ion-person"></i>Profile</a><a onclick="steroids.layers.push({view: driver})" class="button button-calm"><i class="ion-model-s"></i> Delivery</a></div>');
 } else {
     // Display the native navigation bar with the title "Hello World!"
-    steroids.view.navigationBar.show("PACKMAN");
+    steroids.view.navigationBar.show("CartDrop");
     // three Lines Button
     var threeLines = new steroids.buttons.NavigationBarButton();
     threeLines.imagePath = "/icons/lines.png";
