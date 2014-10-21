@@ -1,7 +1,7 @@
 # For an explanation of the steroids.config properties, see the guide at
 # http://guides.appgyver.com/steroids/guides/project_configuration/config-application-coffee/
 
-steroids.config.name = "samedaydilivery"
+steroids.config.name = "CartDrop"
 
 # ## Start Location
 steroids.config.location = "http://localhost/index.html"
@@ -12,7 +12,7 @@ steroids.config.location = "http://localhost/index.html"
 #   {
 #     title: "Index"
 #     icon: "icons/pill@2x.png"
-#     location: "http://localhost/index.html"
+#     location: "http://localhost/signup.html"
 #   },
 #   {
 #     title: "Internet"
@@ -99,7 +99,7 @@ steroids.config.preloads = [
 # ## Initial View
 # steroids.config.initialView =
 #   id: "initialView"
-#   location: "http://localhost/initialView.html"
+#   location: "http://localhost/index.html"
 
 # ## Navigation Bar
 steroids.config.navigationBar.tintColor = "#1aacc3"
