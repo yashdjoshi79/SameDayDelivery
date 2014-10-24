@@ -63,12 +63,12 @@ h2.textOnProfile{
 }
 /*Iphone 6+*/
 @media only screen and (min-device-width: 400px) and (max-device-width: 415px) {
-.hello{width: 125px;
-    height: 125px;
+.hello{width: 140px;
+    height: 140px;
 	}
 .mainBody .row{
 padding-left: 0px;
-padding-top: 10%;
+padding-top: 12%;
 padding-right:0px;
 }
  }

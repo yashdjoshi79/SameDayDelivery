@@ -3,5 +3,5 @@ function cross(){
 steroids.modal.hide();
 };
 function logOut(){
-steroids.layers.popAll();
+steroids.modal.hideAll();
 };

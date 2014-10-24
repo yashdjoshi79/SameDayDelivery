@@ -35,8 +35,6 @@ $.getJSON( s, function( data ) {
 	keepLoading: true,
 	navigationBar: true,
 	disableAnimation: false,
-	waitTransitionEnd: true
-  });
-	}
-});
+	waitTransitionEnd: true});
+	}});
 }
